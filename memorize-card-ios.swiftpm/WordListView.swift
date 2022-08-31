@@ -6,7 +6,7 @@ struct WordListView: View {
         NavigationView {
             List {
                 ForEach(0 ..< items.count) { index in
-                    NavigationLink(destination: EmptyView()) {
+                    NavigationLink(destination: WordDetailView(word: "意味")) {
                         Text(items[index])
                     }
                     .navigationTitle("一覧")
